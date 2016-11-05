@@ -1,0 +1,147 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6
+	font-family: "Open Sans", sans-serif
+	font-weight: normal
+
+h1
+	font-size: em(48px)
+
+h2
+	font-size: em(42px)
+
+h3
+	font-size: em(30px)
+
+h4
+	font-size: em(23px)
+
+h5 
+	font-size: em(19px)
+
+.hidden
+	display: none
+
+.main-head
+	background-image: url("../img/header_bg.png")
+	min-height: 100vh
+	background-size: cover
+	background-position: center
+
+.main_line 
+	h3
+		font-family: 'Open Sans', sans-serif;
+		margin-top: 50px
+
+nav.header_nav
+	margin-top: 62px
+	ul
+		padding-left: 0
+	li
+		list-style-type: none		
+	a
+		margin-right: 30px
+		color: #555
+		display: inline-block
+		font-size: 19px
+		transition: all .6s ease
+		border-bottom-color: transparent
+		&:hover
+			text-decoration: none
+			color: #1b1b1b
+			border-bottom: 1px dashed $accent
+		&:last-child
+			margin-right: 0
+
+
+	
+.phone_number 
+	text-align: right
+	font-size: 22px
+	font-family: "RobotoRegular", sans-serif
+	margin-top: 60px
+	margin-bottom: 30px
+	i
+		font-size: 24px
+	p
+		margin: 0
+
+.phone_number p
+	line-height: 1.85
+	color: #1b1b1b
+	display: inline-block
+	overflow: visible
+	height: em(27px)
+	transition: all 1s ease
+	border-bottom-color: rgba(175, 179, 43, 0)
+	font-family: "OpenSansRegular", sans-serif
+	box-sizing: bordex-box
+	&:hover
+		border-bottom: 1px solid rgba(175, 179, 43, 100)
+		transition: all 1s ease			
+
+.phone_number .call_back
+	display: inline-block
+	margin: 0
+	padding-top: 8px
+	cursor: pointer
+	color: #454545
+	font-size: 14px
+	font-family: "OpenSansBold", sans-serif
+	border-bottom: 1px dashed #454545
+	transition: all 0.5s ease
+	&:hover
+		border-color: transparent
+
+a.call_back:hover
+	text-decoration: none
+
+.head_content .plusiki
+	margin-top: 1px
+	h1
+		margin-top: 0
+		line-height: 55px
+	p
+		font-family: "OpenSansBold", sans-serif
+		text-transform: uppercase
+		line-height: 1
+		margin: 12px 0
+		color: #424242
+
+.header_button
+	padding: 19px 63px 17px
+	margin-top: em(80px)
+	color: #fefefe
+	font-size: 16px
+	text-transform: uppercase
+	line-height: 16px
+	background-color: #8bc34a
+	border-radius: 5px
+	border: none
+	border-bottom: 4px solid darken(#8bc34a, 10%)
+
+header video
+	display: block
+	position: relative
+
+header .video
+	margin-top: 14px
+
+.header_button_down
+	width: 100%
+	i
+		text-align: center
+		display: block
+		font-size: em(25px)
+		line-height: em(25px)
+		padding: 53px 0 48px
+
